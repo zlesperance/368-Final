@@ -1,7 +1,8 @@
 html,body{
 	margin:0;
 	padding:0;
-	background-color:#113;
+	/*background-color:#113;*/
+	background-color:#F00;
 	font-size:18px;
 }
 .wrapper,.header{
