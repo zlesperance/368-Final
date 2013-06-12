@@ -8,17 +8,16 @@
 	<link href='http://fonts.googleapis.com/css?family=Cantarell:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/styles.css" />
-	
 </head>
 <body>
 <div id="holder">
     <header id="mainNav">
         <nav>
             <ul>
-                <li><a href="#home" id="homeLink">Zach Lesperance</a></li>
-                <li><a href="#gallery" id="galleryLink">Gallery</a></li>
-                <li><a href="#portfolio" id="portfolioLink">Portfolio</a></li>
-                <li><a href="#courses" id="courseLink">Courses</a></li>
+                <li><a href="#home" id="homeLink"><i></i><span>Home</span></a></li>
+                <li><a href="#gallery" id="galleryLink"><i></i><span>Gallery</span></a></li>
+                <li><a href="#portfolio" id="portfolioLink"><i></i><span>Portfolio</span></a></li>
+                <li><a href="#courses" id="courseLink"><i></i><span>Courses</span></a></li>
             </ul>
         </nav>
     </header>
@@ -26,23 +25,85 @@
         <div id="gallery" class="content">
         	<h2>Gallery</h2>
         	<p>
-        	    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, fuga, similique esse fugit suscipit illum architecto? Voluptates, inventore, veniam aliquam beatae dolore libero repellat sint eius id dolorum illum perspiciatis.
+        	    This is where I'll put my art gallery... once I have one.
             </p>
+        	<!--Emmet: ul.gallery>li*12>a[href="#gallery]>img[src="http://placehold.it/200x200"]-->
+        	<ul class="gallery">
+        	    <li><a href="#gallery"><img src="http://placehold.it/200x200" alt=""></a></li>
+        	    <li><a href="#gallery"><img src="http://placehold.it/200x200" alt=""></a></li>
+        	    <li><a href="#gallery"><img src="http://placehold.it/200x200" alt=""></a></li>
+        	    <li><a href="#gallery"><img src="http://placehold.it/200x200" alt=""></a></li>
+        	    <li><a href="#gallery"><img src="http://placehold.it/200x200" alt=""></a></li>
+        	    <li><a href="#gallery"><img src="http://placehold.it/200x200" alt=""></a></li>
+        	    <li><a href="#gallery"><img src="http://placehold.it/200x200" alt=""></a></li>
+        	    <li><a href="#gallery"><img src="http://placehold.it/200x200" alt=""></a></li>
+        	    <li><a href="#gallery"><img src="http://placehold.it/200x200" alt=""></a></li>
+        	    <li><a href="#gallery"><img src="http://placehold.it/200x200" alt=""></a></li>
+        	    <li><a href="#gallery"><img src="http://placehold.it/200x200" alt=""></a></li>
+        	    <li><a href="#gallery"><img src="http://placehold.it/200x200" alt=""></a></li>
+        	</ul>
         </div>
         <div id="portfolio" class="content">
         	<h2>Portfolio</h2>
         	<p>
-        	    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, fuga, similique esse fugit suscipit illum architecto? Voluptates, inventore, veniam aliquam beatae dolore libero repellat sint eius id dolorum illum perspiciatis.
+        	    Here will be links to websites, programs, etc that I've worked on that are not static images.
             </p>
         </div>
         <div id="courses" class="content">
         	<h2>Courses</h2>
         	<p>
-        	    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, fuga, similique esse fugit suscipit illum architecto? Voluptates, inventore, veniam aliquam beatae dolore libero repellat sint eius id dolorum illum perspiciatis.
+        	    Relevant coursework taken at <a href="http://www.ewu.edu" target="_blank">Eastern Washington University</a>:
             </p>
+            <table id="courseTable">
+                <thead>
+                    <tr>
+                        <th>Course Title</th>
+                        <th>Course Code</th>
+                        <th>Taken</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="fourPointO">Programming Principles I & II</td>
+                        <td>CSCD210 & CSCD211</td>
+                        <td>Fall 2012, Winter 2013</td>
+                    </tr>
+                    <tr>
+                        <td class="inProgress">Data Structures</td>
+                        <td>CSCD300</td>
+                        <td>Spring 2013</td>
+                    </tr>
+                    <tr>
+                        <td class="inProgress">C & Unix Programming</td>
+                        <td>CSCD240</td>
+                        <td>Spring 2013</td>
+                    </tr>
+                    <tr>
+                        <td class="fourPointO">Computer Graphics</td>
+                        <td>DESN216</td>
+                        <td>Winter 2013</td>
+                    </tr>
+                    <tr>
+                        <td class="inProgress">Web Design</td>
+                        <td>DESN368</td>
+                        <td>Spring 2013</td>
+                    </tr>
+                    <tr>
+                        <td class="inProgress">Digital Circuits</td>
+                        <td>EENG160</td>
+                        <td>Spring 2013</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Key:</p>
+            <ul>
+                <li class="inProgress-key">Course In Progress</li>
+                <li class="fourPointO-key">4.0 GPA recieved for class</li>
+                <li class="deansList-key">Dean's List ( &ge; 3.5 GPA ) recieved for class</li>
+            </ul>
         </div>
         <div id="home" class="content">
-        	<h2 id="homeBanner">
+        	<h2>
                 <img id="fLetter" src="img/z.svg" />
         	    <span id="fname">
         	        Zach
@@ -52,8 +113,8 @@
         	        Lesperance
                 </span>
         	</h2>
-        	<p>
-        	    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, fuga, similique esse fugit suscipit illum architecto? Voluptates, inventore, veniam aliquam beatae dolore libero repellat sint eius id dolorum illum perspiciatis.
+        	<p class="intro">
+        	    Hi! My name is Zach Lesperance. I am a Computer Science student at Eastern Washington University. This is my website.
             </p>
             <h3>Contact Me!</h3>
             <form id="contactForm">
@@ -77,7 +138,7 @@
     <footer>
         <nav>
             <ul>
-                <li><a href="#home">Zach Lesperance</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#courses">Courses</a></li>
